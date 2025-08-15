@@ -1,0 +1,20 @@
+:root {
+    /* BASE */
+    --color-text-main: #f1f1f1;
+
+    /* DESTAQUES E TÍTULOS */
+    --color-text-light: #f5f5dc;
+    --color-highlight: #e3c565;
+    --color-highlight-hover: #ffd700;
+
+    /* FUNDOS SECUNDÁRIOS */
+    --color-bg-dark: #18191a;
+    --color-bg-soft: #232526;
+    --color-bg-form: #2d2f31;
+
+    /* TEXTOS ESCUROS PARA CONTRASTE */
+    --color-text-dark: #181a1b;
+
+    /* AUXILIARES */
+    --color-border-hover: #ffd700;
+}
