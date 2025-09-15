@@ -55,14 +55,18 @@
 }
 
 @media(max-width: 798px) {
+    .hero-content h1 {
+        
+    }
+
     .sobre .sobre-galeria {
         max-width: 396px;
     }
 }
 
 @media(max-width: 600px) {
-    .hero-content h1 {
-        font-size: 1.8rem;
+    .hero .hero-content h1 {
+        font-size: 1.9rem;
     }
 }
 
