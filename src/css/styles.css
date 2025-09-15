@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Rajdhani', sans-serif;
     color: var(--color-text-main);
     background-color: var(--color-bg-dark);
 }
@@ -9,7 +14,6 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #23252652;
     backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
@@ -40,7 +44,7 @@ body {
 .hero {
     background: url('../images/bg-hero-contato.png') no-repeat;
     background-size: cover;
-    height: 89vh;
+    height: 98vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,15 +55,15 @@ body {
 }
 
 .hero .hero-content h1 {
+    font-family: "Orbitron";
     font-size: 2.5rem;
     margin-bottom: 30px;
-    color: var(--color-text-light);
+    color: var(--color-text-main);
     text-shadow: 0 2px 8px #000;
 }
 
-.hero .hero-content .btn {
+.hero .hero-content .btn-inicio {
     background: var(--color-highlight);
-    color: var(--color-text-dark);
     padding: 14px 32px;
     border: none;
     border-radius: 30px;
@@ -68,8 +72,11 @@ body {
     cursor: pointer;
     transition: background 0.2s;
 }
+.hero-content .btn-inicio a {
+    color: var(--color-text-dark);
+}
 
-.hero .hero-content .btn:hover {
+.hero .hero-content .btn-inicio:hover {
     background: var(--color-highlight-hover);
 }
 
@@ -295,6 +302,10 @@ body {
 .footer small {
     display: block;
     margin-top: 8px;
+}
+
+.footer small > a:hover {
+    color: var(--color-highlight);
 }
 
 .redes-sociais a i {

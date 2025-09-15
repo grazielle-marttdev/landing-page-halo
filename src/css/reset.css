@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 ul {
@@ -10,4 +11,5 @@ ul {
 
 a {
     text-decoration: none;
+    color: var(--color-text-main);
 }
