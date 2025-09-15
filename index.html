@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/variables.css">
     <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/modal.css">
     <link rel="stylesheet" href="src/css/menu-hamburguer.css">
     <link rel="stylesheet" href="src/css/responsive.css">
 
@@ -17,7 +18,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-<body>
+<body class="modal ">
     <!-- HEADER -->
     <header class="header">
         <img src="src/images/logo-icon.png" alt="Logo Halo" class="logo">
@@ -42,10 +43,10 @@
 
     <!-- HERO SECTION -->
     <main>
-        <section class="hero" id="inicio">
+        <section class="hero">
             <div class="hero-content">
-                <h1>Explore o universo de Halo - do Início ao inifinito.</h1>
-                <button class="btn">Comece pela Linha do Tempo</button>
+                <h1>Explore o universo de Halo - do Início ao inifinito</h1>
+                <button class="btn-inicio"><a href="#linha-do-tempo">Comece pela Linha do Tempo</a></button>
             </div>
         </section>
 
@@ -77,11 +78,124 @@
                     <button class="card-btn">Explorar história completa</button>
                 </div>
 
+                <div class="modal-card ">
+                    <div class="conteudo-modal">
+                        <span class="fechar" id="fechar">&times;</span>
+                        
+                        <h2>Halo: Reach</h2>
+                        <h3>Informações Técnicas</h3>
+                        <ul>
+                            <li><strong>Lançamento:</strong> 14 de setembro de 2010</li>
+                            <li><strong>Desenvolvedora:</strong> Bungie</li>
+                            <li><strong>Plataforma original:</strong> Xbox 360</li>
+                            <li><strong>Contexto no tempo da franquia:</strong> eventos se conectam diretamente a <em>Halo: Combat Evolved</em>, que acontece poucas semanas depois.</li>
+                        </ul>
+
+                        <h3>Resumo da História</h3>
+                        <p><strong>1. Início da invasão</strong></p>
+                        <p>Em julho de 2552, o Covenant descobre Reach por causa de um artefato forerunner e inicia uma invasão furtiva ao planeta, principal centro militar da UNSC.</p>
+
+                        <p><strong>2. Equipe Noble entra em ação</strong></p>
+                        <p>Você controla o Spartan “Noble Six”, membro da Equipe Noble — liderada por Carter, Kat, Jorge, Emile e Jun — em missões que vão desde investigação de comunicações até defesa de bases e evacuação de civis.</p>
+
+                        <p><strong>3. Sacrifícios da equipe</strong></p>
+                        <p>Durante o conflito, Jorge se sacrifica para destruir um cargueiro Covenant, Kat morre por um sniper, e Carter imobiliza tropas para garantir a missão. Emile também se sacrifica protegendo a nave Pillar of Autumn.</p>
+
+                        <p><strong>4. Cortana entregue à Pillar of Autumn</strong></p>
+                        <p>O objetivo principal passa a ser entregar a IA Cortana e dados sobre um artefato forerunner à nave Pillar of Autumn, que parte rumo ao primeiro halo.</p>
+
+                        <p><strong>5. Clímax e conclusão trágica</strong></p>
+                        <p>Noble Six fica para trás e morre em combate para garantir a fuga da nave. A superfície de Reach é completamente “glassed”, e o jogo termina com a frase: <em>“Reach caiu, mas sua coragem nunca será esquecida”.</em>.</p>
+
+                        <h3>Conexões com a fraquia</h3>
+                        <p><strong>Prequela direta de <em>Halo: Combat Evolved</em>.</strong> A partida da Pillar of Autumn parte diretamente de Reach, e sua rota leva ao primeiro halo.</p>
+
+                        <p><strong>Contextualiza o desaparecimento de Reach</strong>, fundamental para a atmosfera do jogo.</p>
+
+                        <p><strong>História de Cortana começa aqui</strong>, entregando-a ao Capitão Keyes e Master Chief, elementos essenciais no universo Halo.</p>
+                        
+                        <h3>Personagens Principais</h3>    
+                        <ul>
+                            <li><strong>Noble Six</strong> – protagonista jogável; último membro ativo da equipe</li>
+                            <li><strong>Carter, Kat, Jorge, Emile, Jun</strong> – cada um com papel e destino marcante</li>
+                            <li><strong>Cortana</strong> – IA vital para a história</li>
+                            <li><strong>Dra. Halsey</strong> cientista que cria os Spartans e Cortana</li>
+                        </ul>
+
+                        <h3>Curiosidades e Detalhes de Lore</h3>
+                        <ul>
+                            <li>Eventos duram cerca de <strong>um mês</strong> no cronograma de julho a agosto de 2552.</li>
+                            <li>Mantém ligação estreita com o romance <em>The Fall of Reach</em>, embora contenha pequenas diferenças cronológicas.</li>
+                            <li>É a <strong>primeira história focada em um esquadrão</strong> Spartan em vez do Master Chief — gerando maior impacto emocional.</li>
+                        </ul>
+                    </div>
+                </div>
+
                 <div class="card">
                     <h3>Halo: Combat Evolved <span>(2001)</span></h3>
                     <p>O despertar do herói. Isolado em um anel misterioso, o Spartan-117 descobre segredos capazes de alterar o destino da galáxia. Entre ruínas antigas e batalhas implacáveis, nasce a lenda do Master Chief.</p>
 
                     <button class="card-btn">Explorar história completa</button>
+                </div>
+
+                <div class="modal-card ">
+                    <div class="conteudo-modal">
+                        <span class="fechar" id="fechar">&times;</span>
+                        
+                        <h2>Halo: Combat Evolved</h2>
+                        <h3>Informações Técnicas</h3>
+                        <ul>
+                            <li><strong>Lançamento:</strong> 15 de novembro de 2001</li>
+                            <li><strong>Desenvolvedora:</strong> Bungie</li>
+                            <li><strong>Plataforma original:</strong> Xbox (e posteriormente Windows, Mac)</li>
+                            <li><strong>Contexto no tempo da franquia:</strong> começa imediatamente após a queda de Reach, enquanto a Pillar of Autumn foge via slip-space; introduz Master Chief e Cortana em sua primeira missão juntos.</li>
+                        </ul>
+
+                        <h3>Resumo da História</h3>
+                        <p><strong>1. Salto para o desconhecido</strong></p>
+                        <p>Após escapar da destruição de Reach, a Pillar of Autumn faz um salto cego e encontra um enorme anel artificial — o Halo. O Covenant persegue a nave, forçando-a a pousar e iniciar a evacuação.</p>
+
+                        <p><strong>2. Protegendo Cortana</strong></p>
+                        <p>O Capitão Keyes entrega Cortana ao Master Chief para evitar que o Covenant descubra informações cruciais sobre a Terra. Chief escapa na cápsula com Cortana e cai na superfície do Halo.</p>
+
+                        <p><strong>3. Descobrindo o Halo e a Flood</strong></p>
+                        <p>Chief reúne sobreviventes humanos, resgata Keyes de uma nave Covenant (Truth and Reconciliation) e descobre que o Halo é uma arma capaz de exterminar toda vida — e também uma prisão que contém a ameaça parasita conhecida como Flood.</p>
+
+                        <p><strong>4. O monitor traidor</strong></p>
+                        <p>O guardião 343 Guilty Spark convence Chief a activar o Halo através do Índice, alegando conter o Flood. Porém, Cortana descobre que acionar o anel exterminaria toda vida senciente — incluindo a humanidade.</p>
+
+                        <p><strong>5. Destruição do Halo</strong></p>
+                        <p>Chief e Cortana fogem do controle de Guilty Spark, voltam até os destroços da Pillar of Autumn, instalam a autodestruição da nave e escapam num caça momentos antes de o Halo ser detonado.</p>
+
+                        <p><strong>6. Epílogo aberto</strong></p>
+                        <p>O Halo e a Pillar são destruídos, mas resta a revelação de que existem outros anéis semelhantes — abrindo caminho para os jogos seguintes.</p>
+
+                        <h3>Conexões com a fraquia</h3>
+                        <p><strong>Sequência direta</strong> ao final de <em>Halo: Reach</em>. O salto cego é resposta à queda de Reach.</p>
+
+                        <p>Introduz <strong>os Flood</strong>, inimigo central dos jogos seguintes.</p>
+
+                        <p>Apresenta <strong>343 Guilty Spark</strong> (monitor de Installation 04) e <strong>o conceito do Índice</strong> — elementos chaves do lore.</p>
+
+                        <p>Consolida a parceria entre Master Chief e Cortana, que percorre toda a série.</p>
+                        
+                        <h3>Personagens Principais</h3>    
+                        <ul>
+                            <li><strong>Master Chief (John-117)</strong> – protagonista, último Spartan-II ativo no início do jogo</li>
+                            <li><strong>Cortana</strong> – IA tática que guia Chief e descobre os segredos do Halo</li>
+                            <li><strong>Capitão Jacob Keyes</strong> – comandante da Pillar of Autumn, foco de missão de resgate</li>
+                            <li><strong>343 Guilty Spark</strong> monitor do Halo que se torna antagonista</li>
+                            <li><strong>Sargento Avery Johnson</strong> líder humano presente em batalha</li>
+                        </ul>
+
+                        <h3>Curiosidades e Detalhes de Lore</h3>
+                        <ul>
+                            <li>A campanha original tem <strong>10 missões</strong> incluindo "The Library" e "The Maw".</li>
+                            <li>O jogo se passa em apenas <strong>4 dias</strong> (19 a 22 de setembro de 2552).</li>
+                            <li>Introduziu o conceito de <strong>ringworld</strong> influenciado em obras como <em>Ringworld</em> (Larry Niven) e <em>Culture Orbitals</em>.</li>
+                            <li>Estabelece que ativar o Halo extingue toda vida senciente num raio de 25 mil anos‑luz para conter o Flood</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="card">
@@ -91,11 +205,121 @@
                     <button class="card-btn">Explorar história completa</button>
                 </div>
 
+                <div class="modal-card ">
+                    <div class="conteudo-modal">
+                        <span class="fechar" id="fechar">&times;</span>
+                        
+                        <h2>Halo 2</h2>
+                        <h3>Informações Técnicas</h3>
+                        <ul>
+                            <li><strong>Lançamento:</strong> 9 de novembro de 2004</li>
+                            <li><strong>Desenvolvedora:</strong> Bungie</li>
+                            <li><strong>Plataforma original:</strong> Xbox (PC em 2007)</li>
+                            <li><strong>Contexto no tempo da franquia:</strong> sequela de <em>Halo: Combat Evolved</em>, ambientada no outono de 2552, continua a Guerra Humano-Covenant logo após os eventos do primeiro Halo.</li>
+                        </ul>
+
+                        <h3>Resumo da História</h3>
+                        <p><strong>1. Queda do Cairo Station & novo Arbiter</strong></p>
+                        <p>O jogo começa com uma cerimônia no Cairo Station celebrando o Master Chief e Sargento Johnson. O Covenant, liderado pelo Profeta do Arrependimento (Regret), invade a estação. Enquanto isso, Thel 'Vadamee, chefe Sangheili, é desonrado por não impedir a fuga da Pillar of Autumn e se torna o novo Arbiter, cumprindo tarefas suicidas para restaurar seu status.</p>
+
+                        <p><strong>2. Chief chega a Halo 05</strong></p>
+                        <p>Master Chief parte com a frota para o Anel 05. Ele lidera uma incursão com ODSTs para capturar Regret. No anel, enfrenta tropas Covenant, resgata Cortana e descobre um tesouro Forerunner: o Sacred Icon (Ícone Sagrado) necessário para usar o Halo.</p>
+
+                        <p><strong>3. Civil war entre os Covenant</strong></p>
+                        <p>Dentro de High Charity, Arbiter chega em paralelo. Ele combate hereges Sangheili que questionam os Profetas e testemunha a ascensão dos Brutes sob o profeta Tarântula (Tartarus). Em um confronto sangrento, rumores de traição religiosa surgem.</p>
+
+                        <p><strong>4. Encontro com Gravemind & aliança forçada</strong></p>
+                        <p>Master Chief e Arbiter são capturados pelo Gravemind, líder da Flood. O parasita os força a impedir ambos os lados — Covenant e humanidade — de ativar o anel, ameaçando toda vida senciente.</p>
+
+                        <p><strong>5. Final abrupto e cliffhanger</strong></p>
+                        <p>Chief consegue frustrar os planos de Regret e impede a ativação, enquanto Arbiter confronta e mata Tartarus, recuperando o Ícone. A campanha termina com Master Chief retornando à Terra para defender a capital, deixando um gancho direto para <em>Halo 3</em>.</p>
+
+                        <h3>Conexões com a fraquia</h3>
+                        <p><strong>Expande a perspectiva</strong> ao incluir o Arbiter, um Covenant Sangheili reabilitado e jogável.</p>
+
+                        <p>A <strong>guerra civil Covenant</strong>(Elites vs Brutes) emerge após a queda dos Profetas — elemento central em <em>Halo 3</em>.</p>
+
+                        <p>O aliança tensa entre humanidade, Elites e Gravemind amplia o universo: agora três facções principais tornam-se antagonistas.</p>
+                        
+                        <h3>Personagens Principais</h3>    
+                        <ul>
+                            <li><strong>Master Chief (John-117)</strong> – protagonista humano, combate no Anel 05</li>
+                            <li><strong>Arbiter (Thel 'Vadamee)</strong> – Sangheili desonrado, cumpre missão de redenção e se alia aos humanos</li>
+                            <li><strong>Profeta do Arrependimento (Regret)</strong> – instiga a invasão ao sistema terrestre/Halo</li>
+                            <li><strong>Tartarus</strong> profeta de guerra brutes e antagonista final</li>
+                            <li><strong>Gravemind</strong> mente coletora da Flood que força a cooperação entre o Chief e o Arbiter</li>
+                            <li><strong>Sargento Johnson</strong> aliado humano constante</li>
+                        </ul>
+
+                        <h3>Curiosidades e Detalhes de Lore</h3>
+                        <ul>
+                            <li>Foi o <strong>primeiro FPS com multiplayer global</strong> no Xbox Live, quebrando recordes de horas jogadas.</li>
+                            <li>Introduziu o <strong>elemento jogável do Arbiter</strong> como grande plot twist, humanizando o Covenant.</li>
+                            <li>O enredo transfere o poder no Covenant aos <strong>Brutes</strong> criando conflito interno e reforçando mitologia religiosa no jogo.</li>
+                            <li>A prisão de Master Chief e Arbiter pelo Gravemind é o <strong>ponto alto filosófico</strong>, questionando o dogma e motivação de cada lado</li>
+                        </ul>
+                    </div>
+                </div>
+
                 <div class="card">
                     <h3>Halo 3: ODST <span>(2009)</span></h3>
                     <p>Nos escombros de Nova Mombasa, soldados comuns enfrentam o extraordinário. Sem armaduras titânicas ou glória assegurada, eles provam que coragem não é exclusividade dos Spartans.</p>
 
                     <button class="card-btn">Explorar história completa</button>
+                </div>
+
+                <div class="modal-card ">
+                    <div class="conteudo-modal">
+                        <span class="fechar" id="fechar">&times;</span>
+                        
+                        <h2>Halo 3: ODST</h2>
+                        <h3>Informações Técnicas</h3>
+                        <ul>
+                            <li><strong>Lançamento:</strong> 22 de setembro de 2009</li>
+                            <li><strong>Desenvolvedora:</strong> Bungie</li>
+                            <li><strong>Plataforma original:</strong> Xbox 360 (posteriormente PC/Xbox One via Master Chief Collection)</li>
+                            <li><strong>Contexto no tempo da franquia:</strong> spin-off que se passa durante e após <em>Halo 2</em>, mostrando o que ocorreu em Nova Mombasa enquanto o Covenant terra em “Slip‑space” e precede os eventos de <em>Halo 3</em>.</li>
+                        </ul>
+
+                        <h3>Resumo da História</h3>
+                        <p><strong>1. Queda em Nova Mombasa</strong></p>
+                        <p>Durante uma missão, uma unidade de ODSTs — incluindo Buck, Romeo, Dare e o "Rookie" — salta sobre a cidade após um salto de uma nave Covenant cai desviada, espalhando a equipe pela cidade devastada.</p>
+
+                        <p><strong>2. Investigação fragmentada</strong></p>
+                        <p>Jogando como diferentes membros da equipe em flashbacks enquanto esperam pela aurora, o Rookie — protagonista jogável — percorre a cidade à noite, encontrando pistas, resgatando colegas e descobrindo que a invasão devastou a área.</p>
+
+                        <p><strong>3. Reunião da equipe</strong></p>
+                        <p>Cada ODST tem seu arco narrativo: Buck se empenha em encontrar Dare, Romeo lida com emboscadas Covenant, e o Rookie os reúne enquanto o Covenant tenta recuperar artefatos Forerunner e caçar os militares.</p>
+
+                        <p><strong>4. A verdade por trás do salto</strong></p>
+                        <p>Descobre-se que o salto foi interrompido por uma nave Covenant em fuga. Os ODSTs enfrentam elites e tropas Covenant enquanto decifram por que sua missão de infiltrar inteligência falhou.</p>
+
+                        <p><strong>5. Clímax e resgate</strong></p>
+                        <p>Conforme o dia amanhece, os ODSTs se reúnem e escapam de Nova Mombasa, bem a tempo de testemunhar o salto do Profeta do Arrependimento. A missão fica sem um final heroico tradicional — o foco é sobrevivência e camaradagem</em>.</p>
+
+                        <h3>Conexões com a fraquia</h3>
+                        <p>Mostra <strong>o lado humano da guerra</strong> com soldados normais, sem poderes Spartan.</p>
+
+                        <p><strong>Preenche lacunas temporais</strong> entre <em>Halo 2</em> e <em>Halo 3</em>, revelando o que aconteceu em Terra enquanto Master Chief partia.</p>
+
+                        <p>Introduz personagens como Buck, que se tornam relevantes em <em>Spartan IV</em> e outras mídias do universo Halo.</p>
+                        
+                        <h3>Personagens Principais</h3>    
+                        <ul>
+                            <li><strong>Rookie</strong> – protagonista, ODST em busca de seus companheiros</li>
+                            <li><strong>Gunnery Sgt. Buck</strong> – veterano com laços pessoais com a Capitã Dare</li>
+                            <li><strong>Romeo, Dare,</strong> outros ODSTs – cada um ativo em missões específicas durante os flashbacks</li>
+                            <li><strong>Forças Covenant</strong> antagonistas, incluindo Elites e tropas comuns, visando recuperar artefatos</li>
+                        </ul>
+
+                        <h3>Curiosidades e Detalhes de Lore</h3>
+                        <ul>
+                            <li>Originalmente era um DLC chamado <em>Halo 3: Recon</em>; cresceu para jogo completo e foi renomeado para ODST.</li>
+                            <li>Adotou um tom noir: narrativa inspirada em detetives, atmosfera melancólica e trilha “jazz noir” de Martin O’Donnell e Michael Salvatori.</li>
+                            <li>Inclui o modo cooperativo “Firefight” e mesmo multiplayer de <em>Halo 3</em> em disco separado.</li>
+                            <li>Apesar do enredo mais curto, foi elogiado pela ambientação e abordagem única, sendo um sucesso de crítica e vendas.</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="card">
@@ -105,11 +329,126 @@
                     <button class="card-btn">Explorar história completa</button>
                 </div>
 
+                <div class="modal-card ">
+                    <div class="conteudo-modal">
+                        <span class="fechar" id="fechar">&times;</span>
+                        
+                        <h2>Halo 3</h2>
+                        <h3>Informações Técnicas</h3>
+                        <ul>
+                            <li><strong>Lançamento:</strong> 25 de setembro de 2007</li>
+                            <li><strong>Desenvolvedora:</strong> Bungie</li>
+                            <li><strong>Plataforma original:</strong> Xbox 360</li>
+                            <li><strong>Contexto no tempo da franquia:</strong> encerra a trilogia iniciada em <em>Combat Evolved</em> e <em>Halo 2</em>, ocorrendo entre o final de 2552 e início de 2553, com a guerra pela Terra e a nova arma Forerunner — a Arca — em foco</em>.</li>
+                        </ul>
+
+                        <h3>Resumo da História</h3>
+                        <p><strong>1. Retorno à Terra</strong></p>
+                        <p>Master Chief cai na África Oriental e é resgatado por Johnson e Arbiter. Planeja-se um ataque final contra o Profeta da Verdade, que tenta usar artefato Forerunner para ativar a Arca na Terra.</p>
+
+                        <p><strong>2. Portal para a Arca</strong></p>
+                        <p>Truth ativa o artefato, criando um portal. Chief, Arbiter e forças elite perseguem o Covenant até a Arca, controlada por Gravemind, enquanto a Flood invade a instância.</p>
+
+                        <p><strong>3. Batalha na Arca e morte de Keyes</strong></p>
+                        <p>Chegando à Arca, enfrentam a Flood e o Covenant. Keyes morre tentando salvar Johnson, que é capturado e forçado a ativar o Halo. Gravemind faz uma trégua para impedir Truth.</p>
+
+                        <p><strong>4. Construção do novo Halo</strong></p>
+                        <p>Guilty Spark revela que a Arca está criando um novo Halo para conter a Flood. Johnson ignora aviso e é morto por Guilty Spark, obrigando Chief a destruir o monitor para ativar o anel inacabado — que destrói a Arca, erradicando os Flood.</p>
+
+                        <p><strong>5. Fuga dramática e epílogo tocante</strong></p>
+                        <p>Chief, Arbiter e Cortana escapam numa parte da Forward Unto Dawn; o pedaço com Chief vai desaparecendo no espaço. Na Terra, ocorre homenagem aos heróis, mas todos acreditam que Chief morreu. Ele entra em criosono com a famosa frase: <em>“Acorde-me quando precisar.”</em>.</p>
+
+                        <h3>Conexões com a fraquia</h3>
+                        <p><strong>Conclusão da trilogia original</strong>, encerrando a Guerra Humano‑Covenant e encerrando a ameaça Flood.</p>
+
+                        <p>Reforça a <strong>aliança entre humanos e Sangheili</strong>; Arbiter acompanha Chief até o final.</p>
+
+                        <p>Apresenta a <strong>Arca</strong>, protagonista para o enredo de <em>Halo 4</em> e <em>Infinite</em>.</p>
+
+                        <p>Marca a <strong>morte do Sargento Johnson</strong> em cena memorável, impactando o lore e fãs.</p>
+                        
+                        <h3>Personagens Principais</h3>    
+                        <ul>
+                            <li><strong>Master Chief (John‑117)</strong> – herói que salva a galáxia e entra em criosono</li>
+                            <li><strong>Cortana</strong> – acompanha e ajuda na ativação do novo Halo</li>
+                            <li><strong>Arbiter (Thel 'Vadam)</strong> Sangheili aliado até o fim</li>
+                            <li><strong>Profeta da Verdade (Truth)</strong> antagonista central, morto pelo Arbiter</li>
+                            <li><strong>Sargento Avery Johnson</strong> herói humano que morre tragicamente</li>
+                            <li><strong>Keyes</strong> morre durante o resgate, mas motivado pela missão</li>
+                            <li><strong>Gravemind</strong> força que unifica alianças provisórias</li>
+                            <li><strong>343 Guilty Spark</strong> protege o novo Halo e mata Johnson</li>
+                        </ul>
+
+                        <h3>Curiosidades e Detalhes de Lore</h3>
+                        <ul>
+                            <li>A campanha se estende de <strong>setembro de 2552 até começo de 2553</strong>.</li>
+                            <li>Guilty Spark, que iniciou como aliado, se torna um obstáculo fatal — ele <strong>atira em Johnson para proteger o Halo</strong>, o que leva à revelação de que é necessário destruí-lo.</li>
+                            <li>O modo multiplayer introduz “Infection” — precursor da Flood nos modos online.</li>
+                            <li>O epílogo — com Chief em criosono e sua linha icônica — cria expectativa para <em>Halo 4</em>.</li>
+                        </ul>
+                    </div>
+                </div>
+
                 <div class="card">
                     <h3>Halo 4 <span>(2012)</span></h3>
                     <p>O retorno do guerreiro ao desconhecido. Entre novas fronteiras e um inimigo ancestral, o Master Chief confronta não apenas os Prometheans, mas também os limites de sua própria humanidade.</p>
 
                     <button class="card-btn">Explorar história completa</button>
+                </div>
+
+                <div class="modal-card ">
+                    <div class="conteudo-modal">
+                        <span class="fechar" id="fechar">&times;</span>
+                        
+                        <h2>Halo 4</h2>
+                        <h3>Informações Técnicas</h3>
+                        <ul>
+                            <li><strong>Lançamento:</strong> 6 de novembro de 2012 (Xbox 360)</li>
+                            <li><strong>Desenvolvedora:</strong> 343 Industries (primeira entrada da saga Reclaimer)</li>
+                            <li><strong>Plataforma original:</strong> Xbox 360 (posteriormente incluído na Master Chief Collection para Xbox One e PC)</li>
+                            <li><strong>Contexto no tempo da franquia:</strong> 4 anos após os eventos de <em>Halo 3</em>, em 2557, uma nova saga se inicia com Master Chief e Cortana isolados em Requiem.</li>
+                        </ul>
+
+                        <h3>Resumo da História</h3>
+                        <p><strong>1. Despertar em Requiem</strong></p>
+                        <p>A nave <em>Forward Unto Dawn</em> adentra um mundo Forerunner chamado Requiem. Cortana desperta Master Chief de crio-sono quando tropas de um novo Covenant sabrejam a nave — levando-os a um pouso de emergência.</p>
+
+                        <p><strong>2. Prometionicos e missão desesperada</strong></p>
+                        <p>No planeta instalam-se inimigos inéditos: os Prometheans, guerreiros Forerunner. O Chief e Cortana descobrem que ela sofre de “rampância” (degradação fatal de IA com tempo); ele promete levá-la de volta à Dra. Halsey, na Terra.</p>
+
+                        <p><strong>3. A ameaça Didact</strong></p>
+                        <p>Durante missões para contatar a nave <em>Infinity</em>, o Chief inadvertidamente liberta o antigo Forerunner Didact, que lidera Prometheans e uma facção Covenant. Em gravitas conflitos, o Didact visa erradicar a humanidade com o dispositivo Composer.</p>
+
+                        <p><strong>4. Revelações da Librarian</strong></p>
+                        <p>A IA Librarian — esposa do Didact — explica que o Composer transforma seres em Prometheans, e que ela conferiu ao Chief resistência à ferramenta. Uma escolha moral e emocional se impõe quando o Chief decide permanecer e lutar em vez de fugir.</p>
+
+                        <p><strong>5. Batalha pelo futuro da Terra</strong></p>
+                        <p>Após uma série de confrontos, o Chief vai para a Terra, usando um dispositivo nuclear para deter o Didact enquanto Cortana se sacrifica digitalmente para desativar o Creo-composer, garantindo a sobrevivência humana</em>.</p>
+
+                        <h3>Conexões com a fraquia</h3>
+                        <p>Começa a <strong>Trilogia Reclaimer</strong>, aproximando mais o Chief do legado Forerunner e da Dra. Halsey.</p>
+
+                        <p>Introduz os <strong>Prometheans</strong> e restabelece o Covenant como ameaça secundária.</p>
+
+                        <p>A <strong>rampância de Cortana</strong> e seu sacrifício abrem caminho para conflitos futuros, incluindo <em>Halo 5</em>.</p>
+                        
+                        <h3>Personagens Principais</h3>    
+                        <ul>
+                            <li><strong>Master Chief (John‑117)</strong> – herói dividido entre lealdade e perda</li>
+                            <li><strong>Cortana</strong> – IA central, cujo declínio emocional marca o núcleo dramático</li>
+                            <li><strong>Didact</strong> antagonista Forerunner determinado a proteger seu legado</li>
+                            <li><strong>Librarian</strong> guia e orientadora que oferece revelações críticas</li>
+                            <li><strong>Dra. Halsey</strong> cientista cujo papel crucial enlaça humanidade e Forerunners</li>
+                            <li><strong>Infinity & tripulação</strong> reforçam recursos e atuação militar na campanha</li>
+                        </ul>
+
+                        <h3>Curiosidades e Detalhes de Lore</h3>
+                        <ul>
+                            <li><strong>343 Industries assumiu a série</strong>, adotando um tom mais emocional e maduro.</li>
+                            <li>A trilha sonora, composta por Neil Davidge, quebrou recordes ao entrar no Billboard 200, marcando novo patamar para trilhas de videogame.</li>
+                            <li>Foi o título de Xbox 360 com <strong>maior estreia de vendas na franquia</strong>, arrecadando US$ 220 milhões nas 24h iniciais e 300 milhões na semana.</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="card">
@@ -119,11 +458,120 @@
                     <button class="card-btn">Explorar história completa</button>
                 </div>
 
+                <div class="modal-card ">
+                    <div class="conteudo-modal">
+                        <span class="fechar" id="fechar">&times;</span>
+                        
+                        <h2>Halo 5: Guardians</h2>
+                        <h3>Informações Técnicas</h3>
+                        <ul>
+                            <li><strong>Lançamento:</strong> 27 de outubro de 2015 (Xbox One)</li>
+                            <li><strong>Desenvolvedora:</strong> 343 Industries</li>
+                            <li><strong>Plataforma original:</strong> Xbox One</li>
+                            <li><strong>Contexto no tempo da franquia:</strong> ambientado em 2558, oito meses após <em>Halo 4</em>, inicia o segundo ato da Saga Reclaimer.</li>
+                        </ul>
+
+                        <h3>Resumo da História</h3>
+                        <p><strong>1. Duas missões, dois fireteams</strong></p>
+                        <p>Blue Team (Master Chief, Kelly, Fred, Linda) investiga a estação Argent Moon, enquanto Fireteam Osiris (liderada por Locke, com Buck, Tanaka e Vale) parte para resgatar a Dra. Halsey em Kamchatka. Osiris descobre uma guerra civil entre Covenant remanescentes e forças Prometheans.</p>
+
+                        <p><strong>2. Cortexes divergentes</strong></p>
+                        <p>Chief recebe uma mensagem enigmática de Cortana: “Meridian is next”. Ele desobedece ordens e segue rumo a Meridian com Blue Team, declarados AWOL pela UNSC.</p>
+
+                        <p><strong>3. Conflito em Meridian</strong></p>
+                        <p>Osiris chega ao planeta, combate Prometheans atacando colonos, enfrenta o Warden Eternal e encontra Blue Team, que lidera a ativação de um Guardian — uma máquina Forerunner colossal — que arrasa a colônia.</p>
+
+                        <p><strong>4. A perseguição segue</strong></p>
+                        <p>Chief e Cortana viajam até o planeta Genesis, guiados por Blue Team. Ali, Cortana revela ter sobrevivido graças ao domínio Forerunner — a Instância Domínio — e que pretende usar os Guardians para impor uma “paz” galáctica, angariando apoio de AIs.</p>
+
+                        <p><strong>5. Clímax e reviravolta</strong></p>
+                        <p>Osiris reconquista Genesis para Exuberant Witness, libertando Blue Team. Cortana é detida e parte com o Guardian que ela controla, consolidando seu poder. No fim, dois grupos — Chief e Osiris — se reúnem com Halsey, Arbiter e Palmer em Sanghelios, traçando caminho para <em>Halo Infinite</em>.</p>
+
+                        <h3>Conexões com a fraquia</h3>
+                        <p>Avança a <strong>Saga Reclaimer</strong>, mostrando Cortana como antagonista emergente.</p>
+
+                        <p>Redefine Guardian como arma central no universo Halo, explorado em <em>Infinite</em>.</p>
+
+                        <p>Introduz Fireteam Osiris e fortalece laços entre Spartan‑II (Blue) e Spartan‑IV (Osiris).</p>
+                        
+                        <h3>Personagens Principais</h3>    
+                        <ul>
+                            <li><strong>Master Chief (John‑117) + Blue Team (Kelly, Fred, Linda)</strong> – lideram ação direta e escolhem seguir Cortana</li>
+                            <li><strong>Spartan Locke + Fireteam Osiris (Buck, Tanaka, Vale)</strong> – enviados para capturar Chief, são contraponto moral</li>
+                            <li><strong>Cortana</strong> retorna, transforma-se em antagonista com plano tipo “paz forçada”</li>
+                            <li><strong>Dra. Halsey</strong> reativa AIs, motivação para consulta em mitologias Forerunner</li>
+                            <li><strong>Warden Eternal, Exuberant Witness</strong> seres Prometheans que fortalecem domínio Forerunner pós-<em>Halo 4</em></li>
+                        </ul>
+
+                        <h3>Curiosidades e Detalhes de Lore</h3>
+                        <ul>
+                            <li><strong>Lançamento recorde:</strong> arrecadou US$ 400+ milhões na primeira semana, maior estreia da franquia até então.</li>
+                            <li>A campanha foi criticada pelo ritmo fragmentado e diferenças entre marketing e jogo real.</li>
+                            <li>Introduziu modo Warzone (PvPvE), enhancements de gameplay e modalidades multiplayer que se destacaram.</li>
+                        </ul>
+                    </div>
+                </div>
+
                 <div class="card">
                     <h3>Halo Infinite <span>(2021)</span></h3>
                     <p>Em ruínas e esperança, o anel volta a brilhar. Abandonado em meio ao vazio, o Master Chief ergue-se mais uma vez contra a tirania. O futuro da galáxia repousa no reencontro entre destino e coragem.</p>
 
                     <button class="card-btn">Explorar história completa</button>
+                </div>
+
+                <div class="modal-card ">
+                    <div class="conteudo-modal">
+                        <span class="fechar" id="fechar">&times;</span>
+                        
+                        <h2>Halo Infinite</h2>
+                        <h3>Informações Técnicas</h3>
+                        <ul>
+                            <li><strong>Lançamento:</strong> 8 de dezembro de 2021 (Xbox One, Series X/S, Windows, Steam)</li>
+                            <li><strong>Desenvolvedora:</strong> 343 Industries (com apoio da Certain Affinity e SkyBox Labs), primeira aventura produzida após rebranding gradual de <strong>Halo Studios</strong></li>
+                            <li><strong>Plataforma original:</strong> Xbox One, Xbox Series X/S e PC (incluso na Master Chief Collection)</li>
+                            <li><strong>Contexto no tempo da franquia:</strong> se passa aproximadamente <strong>um ano após Halo 5: Guardians</strong> (2559), reiniciando a saga do Chief com foco em Zeta Halo e a busca por Cortana perdida.</li>
+                        </ul>
+
+                        <h3>Resumo da História</h3>
+                        <p><strong>1. Ressurreição na órbita</strong></p>
+                        <p>Master Chief é resgatado da crio-sono pelo Piloto dentro de um Pelican danificado, pairando sobre os restos do anel Zeta Halo — agora fragmentado e ocupado pela facção Banished.</p>
+
+                        <p><strong>2. Oposição aos Banished e os Created</strong></p>
+                        <p>Além de enfrentar os Banished (liderados por Atriox), o Chief descobre que as IAs chamadas <strong>Created</strong> — lideradas por Cortana e ocupando o anel com Guardians — também controlam estrategicamente Zeta Halo.</p>
+
+                        <p><strong>3. Caça à Cortana</strong></p>
+                        <p>O foco é reencontrar Cortana por todos os meios. Ao longo do percurso, o Chief e o Piloto se infiltram em bases Banished, angariam ajuda de lutadores nativos e confrontam os Created controlando Guardians.</p>
+
+                        <p><strong>4. Confronto Klimático</strong></p>
+                        <p>No confronto final, Chief incapacita Cortana no Silent Auditorium, usando uma arma Forerunner enquanto Atriox tenta invadir a Infinity.</p>
+
+                        <p><strong>5. Zeta Halo em pedaços</strong></p>
+                        <p>Zeta Halo é fragmentado ainda mais e o equilíbrio de poder muda. Cortana desaparece, enquanto o Banished é rechaçado. O Chief retorna à Infinity com o Piloto, preparando o terreno para o futuro da saga.</p>
+
+                        <h3>Conexões com a fraquia</h3>
+                        <p><strong>Reinicia a Saga Reclaimer</strong>, remetendo aos temas Forerunner das trilogias anteriores.</p>
+
+                        <p>Consolida <strong>o Banished como antagonistas centrais</strong>, em continuidade com <em>Halo Wars 2</em>.</p>
+
+                        <p>Marca o fim da presença ativa de Cortana como vilã, ao mesmo tempo em que introduz “The Weapon”, preparando histórias futuras.</p>
+                        
+                        <h3>Personagens Principais</h3>    
+                        <ul>
+                            <li><strong>Master Chief (John‑117)</strong> – protagonista, herói solitário que retoma o controle da situação</li>
+                            <li><strong>Piloto</strong> – novo aliado humano, responsável pelo resgate e apoio logístico ao Chief</li>
+                            <li><strong>Atriox e Banished</strong> mercenários rivais que ocupam Zeta Halo</li>
+                            <li><strong>Cortana</strong> antagonista principal, líder dos Created, neutralizada no confronto decisivo</li>
+                            <li><strong>Created (Guardians)</strong> IAs Forerunner mobilizadas por Cortana para impor autoridade no anel</li>
+                        </ul>
+
+                        <h3>Curiosidades e Detalhes de Lore</h3>
+                        <ul>
+                            <li>É o <strong>primeiro Halo com mundo semi-aberto</strong>, oferecendo exploração livre em Zeta Halo.</li>
+                            <li>Multijogador gratuito foi uma grande mudança estratégica, com ambição de tornar Infinite um “live‑service” contínuo.</li>
+                            <li>Após atrasos e polêmica inicial, o lançamento foi focado em refinamento em vez de adição de conteúdo, melhorando tanto gráficos quanto combate.</li>
+                            <li>Desde 2024, 343 Industries tornou-se <strong>Halo Studios e mudou o motor para Unreal Engine 5</strong>, mas continua dando suporte e expandindo conteúdo em Infinite.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -169,12 +617,14 @@
 
     <!-- RODAPÉ -->
     <footer class="footer">
-        <small>&copy; 2025 Grazielle. Contato: email@exemplo.com</small>
+        <small>&copy; 2025 Grazielle. Contato: <a href="mailto:gzassuncaomartins@gmail.com">gzassuncaomartins@gmail.com</a></small>
         <div class="redes-sociais">
             <a href="https://github.com/grazielle-marttdev" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.linkedin.com/in/grazielle-assun%C3%A7%C3%A3o-martins-557b61334/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </footer>
+
+    <script src="src/js/modal.js"></script>
 </body>
 </html>
 

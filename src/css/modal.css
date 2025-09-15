@@ -1,0 +1,94 @@
+.modal.open {
+    overflow: hidden;
+}
+
+.modal-card {
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none; /* previne clique */
+
+    transition: opacity .25s ease, visibility .25s ease;
+    z-index: 1000;
+}
+
+.modal-card.aberto {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal-card .conteudo-modal {
+    position: relative;
+    text-align: left;
+    width: min(960px, 92vw);
+    max-height: min(80vh, 1000px);
+    overflow: auto;
+    background: var(--color-bg-soft);
+    color: #e6e8ee;
+    border-radius: 1.25rem;
+    box-shadow: 0 2px 16px #0006;
+    padding: clamp(1rem, 2.5rem, 2rem); /* clamp: min, ideal, max) */
+
+    transform: translateY(12px) scale(.985);
+    opacity: .98;
+    transition: transform .28s ease, opacity .28s ease;
+}
+
+.modal-card.aberto .conteudo-modal {
+    transform: translateY(0) scale(1); 
+    opacity: 1;
+}
+
+.fechar {
+    position: absolute;
+    top: .75rem;
+    right: .75rem; 
+    padding: auto;
+    border: none;
+    background: transparent;
+    font-size: 1.85rem;
+    line-height: 1; /*  centraliza o ícone */
+    cursor: pointer;
+    opacity: .8;
+}
+.fechar:hover,
+.fechar:focus {
+    opacity: 1;
+    outline: 2px solid rgba(255, 255, 255, .25);
+    outline-offset: 2px; /* afasta o outline do botão */
+}
+
+.conteudo-modal h2 { 
+    text-align: center;
+    color: var(--color-highlight-hover);
+    margin: 0 0 .5rem; 
+    font-size: clamp(1.25rem, 3vw, 1.75rem); 
+}
+.conteudo-modal h3 {
+    color: var(--color-highlight-hover);
+    margin: 1.25rem 0 .5rem;
+    font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+}
+.conteudo-modal p {
+    margin: .5rem 0;
+    line-height: 1.6;
+}
+.conteudo-modal ul {
+    margin: .5rem 0 .75rem 1.25rem;
+    list-style: disc;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .modal-card,
+    .modal-card .conteudo-modal {
+        transition: none;
+    }
+}
