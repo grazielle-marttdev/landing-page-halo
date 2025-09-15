@@ -56,7 +56,7 @@
 
 @media(max-width: 798px) {
     .hero-content h1 {
-        
+        font-size: 1.8rem;
     }
 
     .sobre .sobre-galeria {
