@@ -141,11 +141,10 @@ body {
     overflow-x: auto;
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-}
 
-.linha-do-tempo .carrossel::-webkit-scrollbar {
-    display: none;
+    /* deixa a barra mais sutil */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #ffd70033 #0000; /* cor da barra + fundo */
 }
 
 .linha-do-tempo .carrossel .card {
