@@ -1,3 +1,9 @@
+@media (max-width: 1035px) {
+    .modal-card .conteudo-modal {
+        width: min(960px, 87vw);
+    }
+}
+
 @media(max-width: 840px) {
     .hero {
         margin-bottom: 20px;
